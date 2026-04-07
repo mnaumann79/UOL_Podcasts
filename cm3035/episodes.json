@@ -1,30 +1,30 @@
 [
   {
-    "filename": "1.Scaling.Django.from.TCP.to.ORM.mp3",
+    "filename": "1. Scaling Django from TCP to ORM.mp3",
     "title": "1. Scaling Django from TCP to ORM",
     "description": "",
     "duration_seconds": 1361
   },
   {
-    "filename": "2.Django.ORM.Performance.mp3",
+    "filename": "2. Django ORM Performance.mp3",
     "title": "2. Django ORM Performance",
     "description": "",
     "duration_seconds": 1231
   },
   {
-    "filename": "3.Django.Generic.Views.and.CSS.Specificity.m4a",
+    "filename": "3. Django Generic Views and CSS Specificity.m4a",
     "title": "3. Django Generic Views and CSS Specificity",
     "description": "",
     "duration_seconds": 1212
   },
   {
-    "filename": "4.Stateless.API.Architecture.with.Django.REST.m4a",
+    "filename": "4. Stateless API Architecture with Django REST.m4a",
     "title": "4. Stateless API Architecture with Django REST",
     "description": "",
     "duration_seconds": 1185
   },
   {
-    "filename": "5.Moving.rendering.logic.into.the.browser.m4a",
+    "filename": "5. Moving rendering logic into the browser.m4a",
     "title": "5. Moving rendering logic into the browser",
     "description": "",
     "duration_seconds": 1247

@@ -44,6 +44,7 @@ import datetime
 import html
 import json
 from pathlib import Path
+from urllib.parse import quote
 
 GITHUB_RELEASES_URL = "https://github.com/{owner}/{repo}/releases/download/{tag}"
 
@@ -97,12 +98,12 @@ def build_rss(
     for ext in ("png", "jpg", "jpeg"):
         artwork = folder_path / f"artwork.{ext}"
         if artwork.exists():
-            artwork_url = url_pattern.format(filename=f"artwork.{ext}")
+            artwork_url = url_pattern.format(filename=quote(f"artwork.{ext}"))
             break
 
     items = []
     for audio in audio_files:
-        file_url = url_pattern.format(filename=html.escape(audio.name))
+        file_url = url_pattern.format(filename=quote(audio.name))
         file_size = audio.stat().st_size
         episode_meta = episodes.get(audio.name, {})
         item_title = episode_meta.get("title") or audio.stem
@@ -127,7 +128,7 @@ def build_rss(
     author_tag = f"    <itunes:author>{html.escape(title)}</itunes:author>\n"
 
     rss = f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>{html.escape(title)}</title>
     <link>{html.escape(channel_link)}</link>
