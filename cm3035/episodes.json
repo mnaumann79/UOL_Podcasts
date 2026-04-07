@@ -1,0 +1,56 @@
+[
+  {
+    "filename": "1. Scaling Django from TCP to ORM.mp3",
+    "title": "1. Scaling Django from TCP to ORM",
+    "description": "",
+    "duration_seconds": 1361
+  },
+  {
+    "filename": "2. Django ORM Performance.mp3",
+    "title": "2. Django ORM Performance",
+    "description": "",
+    "duration_seconds": 1231
+  },
+  {
+    "filename": "3. Django Generic Views and CSS Specificity.m4a",
+    "title": "3. Django Generic Views and CSS Specificity",
+    "description": "",
+    "duration_seconds": 1212
+  },
+  {
+    "filename": "4. Stateless API Architecture with Django REST.m4a",
+    "title": "4. Stateless API Architecture with Django REST",
+    "description": "",
+    "duration_seconds": 1185
+  },
+  {
+    "filename": "5. Moving rendering logic into the browser.m4a",
+    "title": "5. Moving rendering logic into the browser",
+    "description": "",
+    "duration_seconds": 1247
+  },
+  {
+    "filename": "6_Asynchronous_Django_with_Celery_and_Channels.m4a",
+    "title": "6. Asynchronous Django with Celery and Channels",
+    "description": "",
+    "duration_seconds": 1163
+  },
+  {
+    "filename": "7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a",
+    "title": "7. From SOAP to Automated OpenAPI Contracts",
+    "description": "",
+    "duration_seconds": 1342
+  },
+  {
+    "filename": "8_How_to_stop_silent_Django_exploits.m4a",
+    "title": "8. How to Stop Silent Django Exploits",
+    "description": "",
+    "duration_seconds": 1179
+  },
+  {
+    "filename": "9_Django_Deployment_from_Localhost_to_Production.m4a",
+    "title": "9. Django Deployment from Localhost to Production",
+    "description": "",
+    "duration_seconds": 1415
+  }
+]
