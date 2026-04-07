@@ -69,9 +69,13 @@ def main():
     episodes = generate_episodes(folder)
 
     if args.course:
-        output_dir = folder / args.course
-        output_dir.mkdir(exist_ok=True)
-        output_path = output_dir / args.output
+        # Only create subfolder if course is not already the last path component
+        if folder.name == args.course:
+            output_path = folder / args.output
+        else:
+            output_dir = folder / args.course
+            output_dir.mkdir(exist_ok=True)
+            output_path = output_dir / args.output
     elif Path(args.output).is_absolute():
         output_path = Path(args.output)
     else:
