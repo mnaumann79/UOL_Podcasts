@@ -1,36 +1,42 @@
 """
-Podcast RSS Generator for Nextcloud-shared MP3 folders
-=======================================================
-Drop MP3s or M4As into a publicly shared Nextcloud folder, then run this script
-to generate an RSS feed you can subscribe to in any podcast app.
+Podcast RSS Generator
+=====================
+Generates an RSS feed from MP3/M4A files for subscription in any podcast app.
+
+Two hosting modes:
+  - Nextcloud/self-hosted: --folder + --base-url
+  - GitHub Releases:       --folder + --repo + --tag
 
 Optional: place an episodes.json next to your MP3s to add per-episode titles,
-descriptions, and duration. Each entry maps a filename to its metadata:
+descriptions, and duration:
 
   [
     {
-      "filename": "django-module3-auth.mp3",
-      "title": "Django Authentication Deep Dive",
-      "description": "Covers session management, token auth, and permissions.",
+      "filename": "01-introduction.mp3",
+      "title": "Introduction to the Module",
+      "description": "Overview of course structure and objectives.",
       "duration_seconds": 3600
     }
   ]
 
-If episodes.json is absent, the filename (without extension) is used as the title
-and no description is added.
+If episodes.json is absent, the filename (without extension) is used as the title.
 
-Optional: place artwork.png (or artwork.jpg) next to your MP3s to add podcast
-artwork. Apple Podcasts requires artwork for the feed to be playable.
+Optional: place artwork.png (or artwork.jpg) next to your MP3s for podcast artwork.
+Apple Podcasts requires artwork for the feed to be playable.
 
-Usage:
-    python generate_podcast_rss.py --folder "/path/to/audio" --base-url "https://nc.example.com/s/TOKEN/download"
-    python generate_podcast_rss.py --folder "/path/to/audio" --base-url "https://nc.example.com/s/TOKEN/download" --title "My Podcast"
+Usage (GitHub Releases):
+    python generate_podcast_rss.py \
+        --folder "d:/path/to/cm3035" \
+        --repo "username/UOL_Podcasts" \
+        --tag "cm3035/v1" \
+        --title "CM3035: Advanced Web Development" \
+        --output "d:/path/to/cm3035/podcast.rss"
 
-The --base-url should be the share URL from Nextcloud, without the filename.
-For example, if your share link is:
-  https://nc.example.com/s/abc123/download/myfile.mp3
-Your --base-url would be:
-  https://nc.example.com/s/abc123/download
+Usage (Nextcloud/self-hosted):
+    python generate_podcast_rss.py \
+        --folder "d:/path/to/audio" \
+        --base-url "https://nc.example.com/s/TOKEN/download" \
+        --title "My Podcast"
 """
 
 import argparse
@@ -38,6 +44,8 @@ import datetime
 import html
 import json
 from pathlib import Path
+
+GITHUB_RELEASES_URL = "https://github.com/{owner}/{repo}/releases/download/{tag}"
 
 
 def parse_duration(seconds: int) -> str:
@@ -60,15 +68,22 @@ def load_episodes(folder: Path) -> dict:
     return {ep["filename"]: ep for ep in raw}
 
 
-def build_rss(folder_path: Path, base_url: str, title: str, description: str) -> str:
-    """Build a podcast RSS feed from MP3 files in the given folder."""
+def build_rss(
+    folder_path: Path,
+    title: str,
+    description: str,
+    url_pattern: str,
+    feed_url: str,
+    channel_link: str,
+) -> str:
+    """Build a podcast RSS feed from MP3 files in the given folder.
 
-    # Strip trailing slash from base_url
-    base_url = base_url.rstrip("/")
+    url_pattern: a format string with a {filename} placeholder, e.g.
+        "https://github.com/owner/repo/releases/download/v1/{filename}"
+        or "https://example.com/{filename}"
+    """
 
-    # Collect MP3s and M4As sorted by filename
     audio_files = sorted(folder_path.glob("*.mp3")) + sorted(folder_path.glob("*.m4a"))
-    audio_files = sorted(audio_files)
     if not audio_files:
         raise ValueError(f"No MP3 or M4A files found in {folder_path}")
 
@@ -77,20 +92,17 @@ def build_rss(folder_path: Path, base_url: str, title: str, description: str) ->
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     pub_date = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
 
-    channel_link = base_url.rstrip("/")
-    feed_url = f"{channel_link}/podcast.rss"
-
-    # Check for artwork (optional but recommended for Apple Podcasts)
+    # Check for artwork
     artwork_url = None
     for ext in ("png", "jpg", "jpeg"):
         artwork = folder_path / f"artwork.{ext}"
         if artwork.exists():
-            artwork_url = f"{channel_link}/artwork.{ext}"
+            artwork_url = url_pattern.format(filename=f"artwork.{ext}")
             break
 
     items = []
     for audio in audio_files:
-        file_url = f"{base_url}/{html.escape(audio.name)}"
+        file_url = url_pattern.format(filename=html.escape(audio.name))
         file_size = audio.stat().st_size
         episode_meta = episodes.get(audio.name, {})
         item_title = episode_meta.get("title") or audio.stem
@@ -111,7 +123,7 @@ def build_rss(folder_path: Path, base_url: str, title: str, description: str) ->
 {duration_tag}    </item>"""
         items.append(item)
 
-    artwork_tag = f"    <itunes:image href=\"{artwork_url}\"/>\n" if artwork_url else ""
+    artwork_tag = f'    <itunes:image href="{artwork_url}"/>\n' if artwork_url else ""
     author_tag = f"    <itunes:author>{html.escape(title)}</itunes:author>\n"
 
     rss = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -130,14 +142,26 @@ def build_rss(folder_path: Path, base_url: str, title: str, description: str) ->
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Generate podcast RSS from a folder of MP3s")
+    parser = argparse.ArgumentParser(
+        description="Generate podcast RSS from a folder of MP3s. "
+        "Use either --base-url (Nextcloud/self-hosted) or --repo+--tag (GitHub Releases)."
+    )
     parser.add_argument("--folder", required=True, help="Path to folder containing MP3 files")
-    parser.add_argument("--base-url", required=True, help="Nextcloud share base URL (without trailing slash or filename)")
+    parser.add_argument("--base-url", help="Direct base URL for audio files (without trailing slash)")
+    parser.add_argument("--repo", help="GitHub repo in owner/repo format (use with --tag)")
+    parser.add_argument("--tag", help="GitHub release tag (use with --repo)")
     parser.add_argument("--title", default="Podcast", help="Podcast feed title")
     parser.add_argument("--description", default="Audio files", help="Podcast feed description")
     parser.add_argument("--output", default="podcast.rss", help="Output RSS file path")
 
     args = parser.parse_args()
+
+    if bool(args.repo) != bool(args.tag):
+        print("Error: both --repo and --tag must be provided together")
+        return 1
+    if not args.base_url and not args.repo:
+        print("Error: must provide either --base-url or --repo (with --tag)")
+        return 1
 
     folder = Path(args.folder)
     if not folder.exists():
@@ -145,13 +169,26 @@ def main():
         return 1
 
     audio_files = sorted(folder.glob("*.mp3")) + sorted(folder.glob("*.m4a"))
-    rss = build_rss(folder, args.base_url, args.title, args.description)
+
+    if args.repo:
+        owner, repo = args.repo.split("/", 1)
+        base = GITHUB_RELEASES_URL.format(owner=owner, repo=repo, tag=args.tag)
+        channel_link = f"https://github.com/{owner}/{repo}/releases/tag/{args.tag}"
+    else:
+        base = args.base_url.rstrip("/")
+        channel_link = base
+
+    url_pattern = f"{base}/{{filename}}"
+    feed_url = f"{base}/podcast.rss"
+
+    rss = build_rss(folder, args.title, args.description, url_pattern, feed_url, channel_link)
     Path(args.output).write_text(rss, encoding="utf-8")
+
     print(f"RSS feed written to: {args.output}")
     print(f"Found {len(audio_files)} audio files.")
     print()
     print(f"Subscribe in your podcast app at:")
-    print(f"  {args.base_url.rstrip('/')}/{args.output}")
+    print(f"  {feed_url}")
 
     return 0
 

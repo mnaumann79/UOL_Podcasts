@@ -45,9 +45,13 @@ def main():
     parser = argparse.ArgumentParser(description="Scaffold episodes.json from audio files")
     parser.add_argument("--folder", required=True, help="Path to folder containing MP3/M4A files")
     parser.add_argument(
+        "--course",
+        help="Course code (e.g., cm3035). Creates a subfolder and puts episodes.json there.",
+    )
+    parser.add_argument(
         "--output",
         default="episodes.json",
-        help="Output episodes.json path (default: episodes.json in --folder)",
+        help="Output episodes.json filename (default: episodes.json)",
     )
 
     args = parser.parse_args()
@@ -64,12 +68,16 @@ def main():
 
     episodes = generate_episodes(folder)
 
-    output_path = Path(args.output)
-    if output_path.is_absolute():
-        output_path.write_text(json.dumps(episodes, indent=2, ensure_ascii=False), encoding="utf-8")
+    if args.course:
+        output_dir = folder / args.course
+        output_dir.mkdir(exist_ok=True)
+        output_path = output_dir / args.output
+    elif Path(args.output).is_absolute():
+        output_path = Path(args.output)
     else:
-        (folder / args.output).write_text(json.dumps(episodes, indent=2, ensure_ascii=False), encoding="utf-8")
         output_path = folder / args.output
+
+    output_path.write_text(json.dumps(episodes, indent=2, ensure_ascii=False), encoding="utf-8")
 
     print(f"Written {len(episodes)} episodes to {output_path}")
     for ep in episodes:
