@@ -52,5 +52,11 @@
     "title": "9. Django Deployment from Localhost to Production",
     "description": "",
     "duration_seconds": 1415
+  },
+  {
+    "filename": "10_Scaling_Django_beyond_a_single_server.m4a",
+    "title": "10. Scaling Django Beyond A Single Server",
+    "description": "",
+    "duration_seconds": 1216
   }
 ]
