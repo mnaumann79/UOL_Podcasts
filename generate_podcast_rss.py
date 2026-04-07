@@ -43,10 +43,17 @@ import argparse
 import datetime
 import html
 import json
+import re
 from pathlib import Path
 from urllib.parse import quote
 
 GITHUB_RELEASES_URL = "https://github.com/{owner}/{repo}/releases/download/{tag}"
+
+
+def natural_sort_key(path):
+    """Sort key that handles leading numbers naturally (2 before 10)."""
+    parts = re.split(r'(\d+)', path.name)
+    return [int(p) if p.isdigit() else p.lower() for p in parts]
 
 
 def parse_duration(seconds: int) -> str:
@@ -84,7 +91,10 @@ def build_rss(
         or "https://example.com/{filename}"
     """
 
-    audio_files = sorted(folder_path.glob("*.mp3")) + sorted(folder_path.glob("*.m4a"))
+    audio_files = sorted(
+        list(folder_path.glob("*.mp3")) + list(folder_path.glob("*.m4a")),
+        key=natural_sort_key,
+    )
     if not audio_files:
         raise ValueError(f"No MP3 or M4A files found in {folder_path}")
 
