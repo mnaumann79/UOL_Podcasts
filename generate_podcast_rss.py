@@ -4,8 +4,8 @@ Podcast RSS Generator
 Generates an RSS feed from MP3/M4A files for subscription in any podcast app.
 
 Two hosting modes:
-  - Nextcloud/self-hosted: --folder + --base-url
-  - GitHub Releases:       --folder + --repo + --tag
+  - Nextcloud:         --nextcloud-url + --nextcloud-course
+  - GitHub Releases:    --repo + --tag
 
 Optional: place an episodes.json next to your MP3s to add per-episode titles,
 descriptions, and duration:
@@ -24,6 +24,15 @@ If episodes.json is absent, the filename (without extension) is used as the titl
 Optional: place artwork.png (or artwork.jpg) next to your MP3s for podcast artwork.
 Apple Podcasts requires artwork for the feed to be playable.
 
+Usage (Nextcloud):
+    python generate_podcast_rss.py \
+        --folder "d:/path/to/cm3035" \
+        --nextcloud-url "https://nc.example.com/s/TOKEN" \
+        --nextcloud-course "cm3035" \
+        --feed-url "https://example.com/cm3035/podcast.rss" \
+        --title "CM3035: Advanced Web Development" \
+        --output "d:/path/to/cm3035/podcast.rss"
+
 Usage (GitHub Releases):
     python generate_podcast_rss.py \
         --folder "d:/path/to/cm3035" \
@@ -31,12 +40,6 @@ Usage (GitHub Releases):
         --tag "cm3035/v1" \
         --title "CM3035: Advanced Web Development" \
         --output "d:/path/to/cm3035/podcast.rss"
-
-Usage (Nextcloud/self-hosted):
-    python generate_podcast_rss.py \
-        --folder "d:/path/to/audio" \
-        --base-url "https://nc.example.com/s/TOKEN/download" \
-        --title "My Podcast"
 """
 
 import argparse
@@ -52,7 +55,7 @@ GITHUB_RELEASES_URL = "https://github.com/{owner}/{repo}/releases/download/{tag}
 
 def natural_sort_key(path):
     """Sort key that handles leading numbers naturally (2 before 10)."""
-    parts = re.split(r'(\d+)', path.name)
+    parts = re.split(r"(\d+)", path.name)
     return [int(p) if p.isdigit() else p.lower() for p in parts]
 
 
@@ -87,8 +90,8 @@ def build_rss(
     """Build a podcast RSS feed from MP3 files in the given folder.
 
     url_pattern: a format string with a {filename} placeholder, e.g.
-        "https://github.com/owner/repo/releases/download/v1/{filename}"
-        or "https://example.com/{filename}"
+        "https://nc.example.com/s/TOKEN/download?path=/cm3035&files={filename}"
+        or "https://github.com/owner/repo/releases/download/v1/{filename}"
     """
 
     audio_files = sorted(
@@ -155,10 +158,12 @@ def build_rss(
 def main():
     parser = argparse.ArgumentParser(
         description="Generate podcast RSS from a folder of MP3s. "
-        "Use either --base-url (Nextcloud/self-hosted) or --repo+--tag (GitHub Releases)."
+        "Use --nextcloud-url (with --nextcloud-course) or --repo+--tag (GitHub Releases)."
     )
     parser.add_argument("--folder", required=True, help="Path to folder containing MP3 files")
-    parser.add_argument("--base-url", help="Direct base URL for audio files (without trailing slash)")
+    parser.add_argument("--nextcloud-url", help="Nextcloud public share URL base (e.g. https://nc.example.com/s/TOKEN)")
+    parser.add_argument("--nextcloud-course", help="Course folder name on Nextcloud (used as path param)")
+    parser.add_argument("--feed-url", help="Full URL where the RSS feed will be served")
     parser.add_argument("--repo", help="GitHub repo in owner/repo format (use with --tag)")
     parser.add_argument("--tag", help="GitHub release tag (use with --repo)")
     parser.add_argument("--title", default="Podcast", help="Podcast feed title")
@@ -170,8 +175,11 @@ def main():
     if bool(args.repo) != bool(args.tag):
         print("Error: both --repo and --tag must be provided together")
         return 1
-    if not args.base_url and not args.repo:
-        print("Error: must provide either --base-url or --repo (with --tag)")
+    if args.nextcloud_url and not args.nextcloud_course:
+        print("Error: --nextcloud-course is required when using --nextcloud-url")
+        return 1
+    if not args.nextcloud_url and not args.repo:
+        print("Error: must provide either --nextcloud-url or --repo (with --tag)")
         return 1
 
     folder = Path(args.folder)
@@ -181,16 +189,17 @@ def main():
 
     audio_files = sorted(folder.glob("*.mp3")) + sorted(folder.glob("*.m4a"))
 
-    if args.repo:
+    if args.nextcloud_url:
+        base = args.nextcloud_url.rstrip("/")
+        url_pattern = f"{base}/download?path=/{args.nextcloud_course}&files={{filename}}"
+        channel_link = base
+        feed_url = args.feed_url or f"{base}/download?path=/{args.nextcloud_course}&files=podcast.rss"
+    else:
         owner, repo = args.repo.split("/", 1)
         base = GITHUB_RELEASES_URL.format(owner=owner, repo=repo, tag=args.tag)
+        url_pattern = f"{base}/{{filename}}"
         channel_link = f"https://github.com/{owner}/{repo}/releases/tag/{args.tag}"
-    else:
-        base = args.base_url.rstrip("/")
-        channel_link = base
-
-    url_pattern = f"{base}/{{filename}}"
-    feed_url = f"{base}/podcast.rss"
+        feed_url = f"{base}/podcast.rss"
 
     rss = build_rss(folder, args.title, args.description, url_pattern, feed_url, channel_link)
     Path(args.output).write_text(rss, encoding="utf-8")
