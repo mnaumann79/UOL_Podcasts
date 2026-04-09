@@ -5,89 +5,99 @@
     <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr</link>
     <description>This module covers server-side web development and the related internet protocols and standards; HTTP, REST and web sockets. The course focuses on applied server-side programming in Python and makes extensive use of the Django web framework.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 15:55:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 15:14:36 GMT</lastBuildDate>
     <itunes:author>CM3035: Advanced Web Development</itunes:author>
-    <itunes:image href="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=artwork.png"/>
+    <itunes:image href="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=artwork.png"/>
     <atom:link href="https://mnaumann79.github.io/UOL_Podcasts/cm3035/podcast.rss" rel="self" type="application/rss+xml"/>
     <item>
       <title>1. Scaling Django from TCP to ORM</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=1.%20Scaling%20Django%20from%20TCP%20to%20ORM.mp3</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=1.%20Scaling%20Django%20from%20TCP%20to%20ORM.mp3</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=1.%20Scaling%20Django%20from%20TCP%20to%20ORM.mp3</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=1.%20Scaling%20Django%20from%20TCP%20to%20ORM.mp3" type="audio/mpeg" length="43803580"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=1.%20Scaling%20Django%20from%20TCP%20to%20ORM.mp3" type="audio/mpeg" length="43803580"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>22:41</itunes:duration>
     </item>
     <item>
       <title>2. Django ORM Performance</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=2.%20Django%20ORM%20Performance.mp3</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=2.%20Django%20ORM%20Performance.mp3</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=2.%20Django%20ORM%20Performance.mp3</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=2.%20Django%20ORM%20Performance.mp3" type="audio/mpeg" length="39608198"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=2.%20Django%20ORM%20Performance.mp3" type="audio/mpeg" length="39608198"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>20:31</itunes:duration>
     </item>
     <item>
       <title>3. Django Generic Views and CSS Specificity</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=3.%20Django%20Generic%20Views%20and%20CSS%20Specificity.m4a</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=3.%20Django%20Generic%20Views%20and%20CSS%20Specificity.m4a</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=3.%20Django%20Generic%20Views%20and%20CSS%20Specificity.m4a</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=3.%20Django%20Generic%20Views%20and%20CSS%20Specificity.m4a" type="audio/x-m4a" length="39004358"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=3.%20Django%20Generic%20Views%20and%20CSS%20Specificity.m4a" type="audio/x-m4a" length="39004358"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>20:12</itunes:duration>
     </item>
     <item>
       <title>4. Stateless API Architecture with Django REST</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=4.%20Stateless%20API%20Architecture%20with%20Django%20REST.m4a</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=4.%20Stateless%20API%20Architecture%20with%20Django%20REST.m4a</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=4.%20Stateless%20API%20Architecture%20with%20Django%20REST.m4a</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=4.%20Stateless%20API%20Architecture%20with%20Django%20REST.m4a" type="audio/x-m4a" length="38127734"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=4.%20Stateless%20API%20Architecture%20with%20Django%20REST.m4a" type="audio/x-m4a" length="38127734"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>19:45</itunes:duration>
     </item>
     <item>
       <title>5. Moving rendering logic into the browser</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=5.%20Moving%20rendering%20logic%20into%20the%20browser.m4a</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=5.%20Moving%20rendering%20logic%20into%20the%20browser.m4a</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=5.%20Moving%20rendering%20logic%20into%20the%20browser.m4a</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=5.%20Moving%20rendering%20logic%20into%20the%20browser.m4a" type="audio/x-m4a" length="40125264"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=5.%20Moving%20rendering%20logic%20into%20the%20browser.m4a" type="audio/x-m4a" length="40125264"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>20:47</itunes:duration>
     </item>
     <item>
-      <title>6_Asynchronous_Django_with_Celery_and_Channels</title>
+      <title>6. Asynchronous Django with Celery and Channels</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=6_Asynchronous_Django_with_Celery_and_Channels.m4a</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=6_Asynchronous_Django_with_Celery_and_Channels.m4a</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=6_Asynchronous_Django_with_Celery_and_Channels.m4a</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=6_Asynchronous_Django_with_Celery_and_Channels.m4a" type="audio/x-m4a" length="37446203"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=6_Asynchronous_Django_with_Celery_and_Channels.m4a" type="audio/x-m4a" length="37446203"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>19:23</itunes:duration>
     </item>
     <item>
-      <title>7_From_SOAP_to_Automated_OpenAPI_Contracts</title>
+      <title>7. From SOAP to Automated OpenAPI Contracts</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a" type="audio/x-m4a" length="43205717"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a" type="audio/x-m4a" length="43205717"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>22:22</itunes:duration>
     </item>
     <item>
-      <title>8_How_to_stop_silent_Django_exploits</title>
+      <title>8. How to Stop Silent Django Exploits</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=8_How_to_stop_silent_Django_exploits.m4a</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=8_How_to_stop_silent_Django_exploits.m4a</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=8_How_to_stop_silent_Django_exploits.m4a</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=8_How_to_stop_silent_Django_exploits.m4a" type="audio/x-m4a" length="37939481"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=8_How_to_stop_silent_Django_exploits.m4a" type="audio/x-m4a" length="37939481"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>19:39</itunes:duration>
     </item>
     <item>
-      <title>9_Django_Deployment_from_Localhost_to_Production</title>
+      <title>9. Django Deployment from Localhost to Production</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=9_Django_Deployment_from_Localhost_to_Production.m4a</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=9_Django_Deployment_from_Localhost_to_Production.m4a</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=9_Django_Deployment_from_Localhost_to_Production.m4a</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=9_Django_Deployment_from_Localhost_to_Production.m4a" type="audio/x-m4a" length="45555218"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=9_Django_Deployment_from_Localhost_to_Production.m4a" type="audio/x-m4a" length="45555218"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>23:35</itunes:duration>
     </item>
     <item>
-      <title>10_Scaling_Django_beyond_a_single_server</title>
+      <title>10. Scaling Django Beyond A Single Server</title>
       <description></description>
-      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=10_Scaling_Django_beyond_a_single_server.m4a</link>
+      <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=10_Scaling_Django_beyond_a_single_server.m4a</link>
       <guid isPermaLink="true">https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=10_Scaling_Django_beyond_a_single_server.m4a</guid>
-      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&files=10_Scaling_Django_beyond_a_single_server.m4a" type="audio/x-m4a" length="39161237"/>
-      <pubDate>Wed, 08 Apr 2026 15:55:00 +0000</pubDate>
+      <enclosure url="https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr/download?path=/cm3035&amp;files=10_Scaling_Django_beyond_a_single_server.m4a" type="audio/x-m4a" length="39161237"/>
+      <pubDate>Thu, 09 Apr 2026 15:14:36 +0000</pubDate>
+      <itunes:duration>20:16</itunes:duration>
     </item>
   </channel>
 </rss>
