@@ -69,9 +69,12 @@ def parse_duration(seconds: int) -> str:
     return f"{minutes}:{secs:02}"
 
 
-def load_episodes(folder: Path) -> dict:
-    """Load episodes.json if it exists. Returns dict keyed by filename."""
-    episodes_file = folder / "episodes.json"
+def load_episodes(path: Path) -> dict:
+    """Load episodes.json if it exists. Returns dict keyed by filename.
+
+    path can be a directory (looks for episodes.json inside) or a file path.
+    """
+    episodes_file = path / "episodes.json" if path.is_dir() else path
     if not episodes_file.exists():
         return {}
     with open(episodes_file, encoding="utf-8") as f:
@@ -86,12 +89,14 @@ def build_rss(
     url_pattern: str,
     feed_url: str,
     channel_link: str,
+    episodes_path: Path | None = None,
 ) -> str:
     """Build a podcast RSS feed from MP3 files in the given folder.
 
     url_pattern: a format string with a {filename} placeholder, e.g.
         "https://nc.example.com/s/TOKEN/download?path=/cm3035&files={filename}"
         or "https://github.com/owner/repo/releases/download/v1/{filename}"
+    episodes_path: optional path to episodes.json (defaults to folder_path)
     """
 
     audio_files = sorted(
@@ -101,7 +106,7 @@ def build_rss(
     if not audio_files:
         raise ValueError(f"No MP3 or M4A files found in {folder_path}")
 
-    episodes = load_episodes(folder_path)
+    episodes = load_episodes(episodes_path or folder_path)
 
     now = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S GMT")
     pub_date = datetime.datetime.now(datetime.timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
@@ -111,7 +116,7 @@ def build_rss(
     for ext in ("png", "jpg", "jpeg"):
         artwork = folder_path / f"artwork.{ext}"
         if artwork.exists():
-            artwork_url = url_pattern.format(filename=quote(f"artwork.{ext}"))
+            artwork_url = html.escape(url_pattern.format(filename=quote(f"artwork.{ext}")))
             break
 
     items = []
@@ -123,16 +128,16 @@ def build_rss(
         item_desc = episode_meta.get("description", "")
         duration_secs = episode_meta.get("duration_seconds")
 
-        guid = html.escape(file_url)
+        xml_url = html.escape(file_url)
         mime_type = "audio/mpeg" if audio.suffix == ".mp3" else "audio/x-m4a"
         duration_tag = f"      <itunes:duration>{parse_duration(duration_secs)}</itunes:duration>\n" if duration_secs else ""
 
         item = f"""    <item>
       <title>{html.escape(item_title)}</title>
       <description>{html.escape(item_desc)}</description>
-      <link>{file_url}</link>
-      <guid isPermaLink="true">{guid}</guid>
-      <enclosure url="{file_url}" type="{mime_type}" length="{file_size}"/>
+      <link>{xml_url}</link>
+      <guid isPermaLink="true">{xml_url}</guid>
+      <enclosure url="{xml_url}" type="{mime_type}" length="{file_size}"/>
       <pubDate>{pub_date}</pubDate>
 {duration_tag}    </item>"""
         items.append(item)
@@ -161,6 +166,7 @@ def main():
         "Use --nextcloud-url (with --nextcloud-course) or --repo+--tag (GitHub Releases)."
     )
     parser.add_argument("--folder", required=True, help="Path to folder containing MP3 files")
+    parser.add_argument("--episodes", help="Path to episodes.json (defaults to --folder)")
     parser.add_argument("--nextcloud-url", help="Nextcloud public share URL base (e.g. https://nc.example.com/s/TOKEN)")
     parser.add_argument("--nextcloud-course", help="Course folder name on Nextcloud (used as path param)")
     parser.add_argument("--feed-url", help="Full URL where the RSS feed will be served")
@@ -201,7 +207,8 @@ def main():
         channel_link = f"https://github.com/{owner}/{repo}/releases/tag/{args.tag}"
         feed_url = f"{base}/podcast.rss"
 
-    rss = build_rss(folder, args.title, args.description, url_pattern, feed_url, channel_link)
+    episodes_path = Path(args.episodes) if args.episodes else None
+    rss = build_rss(folder, args.title, args.description, url_pattern, feed_url, channel_link, episodes_path)
     Path(args.output).write_text(rss, encoding="utf-8")
 
     print(f"RSS feed written to: {args.output}")

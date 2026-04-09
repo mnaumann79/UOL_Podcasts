@@ -137,6 +137,7 @@ def main():
     result = subprocess.run(
         [sys.executable, "generate_podcast_rss.py",
          "--folder", str(nc_folder),
+         "--episodes", str(episodes_path),
          "--nextcloud-url", config["nextcloud_url"],
          "--nextcloud-course", course,
          "--feed-url", feed_url,
