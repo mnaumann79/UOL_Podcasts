@@ -196,10 +196,16 @@ def main():
     audio_files = sorted(folder.glob("*.mp3")) + sorted(folder.glob("*.m4a"))
 
     if args.nextcloud_url:
-        base = args.nextcloud_url.rstrip("/")
-        url_pattern = f"{base}/download?path=/{args.nextcloud_course}&files={{filename}}"
-        channel_link = base
-        feed_url = args.feed_url or f"{base}/download?path=/{args.nextcloud_course}&files=podcast.rss"
+        # Build WebDAV URL with embedded share token for direct file access
+        # Input: https://nextcloud.mnaumann.com/s/TOKEN
+        # Output: https://TOKEN:@nextcloud.mnaumann.com/public.php/webdav/COURSE/FILENAME
+        from urllib.parse import urlparse
+        parsed = urlparse(args.nextcloud_url.rstrip("/"))
+        token = parsed.path.rstrip("/").split("/")[-1]
+        webdav_base = f"{parsed.scheme}://{token}:@{parsed.hostname}/public.php/webdav/{args.nextcloud_course}"
+        url_pattern = f"{webdav_base}/{{filename}}"
+        channel_link = args.nextcloud_url
+        feed_url = args.feed_url or f"{webdav_base}/podcast.rss"
     else:
         owner, repo = args.repo.split("/", 1)
         base = GITHUB_RELEASES_URL.format(owner=owner, repo=repo, tag=args.tag)
