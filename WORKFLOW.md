@@ -1,5 +1,9 @@
 # Podcast Workflow
 
+## Quick Start (Optional: Claude Code Skill)
+
+A `podcast-publish` skill is installed at `~/.claude/skills/podcast-publish/SKILL.md`. If you use Claude Code, you can just ask in natural language — e.g. *"publish new episodes for cm3035"* or *"create a new podcast course cm3036"* — and the skill will guide Claude through the workflow below. The manual steps remain the same either way.
+
 ## Architecture
 
 - **Audio hosting:** Nextcloud (public share via WebDAV)
