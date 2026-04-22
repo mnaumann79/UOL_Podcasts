@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CM3020: Artificial Intelligence</title>
+    <link>https://nextcloud.mnaumann.com/s/cokaDHHn3qGkbqr</link>
+    <description>Through this module you will learn about the field of Artificial Intelligence. This is a long-standing area of interest in computer science research, and it builds on and complements several of the other modules in the programme. The module focuses on topics such as symbolic representations, modelling, task learning and game playing. This module is focused on Artificial Intelligence techniques. You will understand the historical development of Artificial Intelligence including search, vision and planning. You will become familiar with the foundations of agent-based approaches to software design, decision making and problem solving including under uncertainty. You will have an opportunity to apply Artificial Intelligence techniques to particular problems, such as game playing and decision making.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 22 Apr 2026 15:51:07 GMT</lastBuildDate>
+    <itunes:author>CM3020: Artificial Intelligence</itunes:author>
+    <itunes:image href="https://cokaDHHn3qGkbqr:@nextcloud.mnaumann.com/public.php/webdav/cm3020/artwork.png"/>
+    <atom:link href="https://mnaumann79.github.io/UOL_Podcasts/cm3020/podcast.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>01. How Ai Masters Games From Scratch</title>
+      <description></description>
+      <link>https://cokaDHHn3qGkbqr:@nextcloud.mnaumann.com/public.php/webdav/cm3020/01_How_AI_Masters_Games_From_Scratch.m4a</link>
+      <guid isPermaLink="true">https://cokaDHHn3qGkbqr:@nextcloud.mnaumann.com/public.php/webdav/cm3020/01_How_AI_Masters_Games_From_Scratch.m4a</guid>
+      <enclosure url="https://cokaDHHn3qGkbqr:@nextcloud.mnaumann.com/public.php/webdav/cm3020/01_How_AI_Masters_Games_From_Scratch.m4a" type="audio/x-m4a" length="31653072"/>
+      <pubDate>Wed, 22 Apr 2026 15:51:07 +0000</pubDate>
+      <itunes:duration>16:23</itunes:duration>
+    </item>
+    <item>
+      <title>02. How Dqn Agents Master Atari Games</title>
+      <description></description>
+      <link>https://cokaDHHn3qGkbqr:@nextcloud.mnaumann.com/public.php/webdav/cm3020/02_How_DQN_agents_master_Atari_games.m4a</link>
+      <guid isPermaLink="true">https://cokaDHHn3qGkbqr:@nextcloud.mnaumann.com/public.php/webdav/cm3020/02_How_DQN_agents_master_Atari_games.m4a</guid>
+      <enclosure url="https://cokaDHHn3qGkbqr:@nextcloud.mnaumann.com/public.php/webdav/cm3020/02_How_DQN_agents_master_Atari_games.m4a" type="audio/x-m4a" length="91585011"/>
+      <pubDate>Wed, 22 Apr 2026 15:51:07 +0000</pubDate>
+      <itunes:duration>47:25</itunes:duration>
+    </item>
+  </channel>
+</rss>
