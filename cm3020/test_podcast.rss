@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CM3020 Test — GitHub Releases</title>
+    <link>https://github.com/mnaumann79/UOL_Podcasts/releases/tag/cm3020/v1</link>
+    <description>Test feed using GitHub Releases hosting.</description>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jun 2026 21:30:00 GMT</lastBuildDate>
+    <itunes:author>CM3020: Artificial Intelligence</itunes:author>
+    <atom:link href="https://mnaumann79.github.io/UOL_Podcasts/cm3020/test_podcast.rss" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>04. Implementing the Breakwall DQN Agent</title>
+      <description>Test episode hosted on GitHub Releases.</description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a" type="audio/mp4" length="40120035"/>
+      <pubDate>Wed, 10 Jun 2026 21:30:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>
