@@ -13,7 +13,8 @@
       <description>Test episode hosted on GitHub Releases.</description>
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a</guid>
-      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a" type="audio/mp4" length="40120035"/>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a" type="audio/x-m4a" length="40120035"/>
+      <itunes:duration>20:46</itunes:duration>
       <pubDate>Wed, 10 Jun 2026 21:30:00 +0000</pubDate>
     </item>
   </channel>
