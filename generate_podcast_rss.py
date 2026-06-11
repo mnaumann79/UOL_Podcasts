@@ -215,7 +215,7 @@ def main():
         base = GITHUB_RELEASES_URL.format(owner=owner, repo=repo, tag=args.tag)
         url_pattern = f"{base}/{{filename}}"
         channel_link = f"https://github.com/{owner}/{repo}/releases/tag/{args.tag}"
-        feed_url = f"{base}/podcast.rss"
+        feed_url = args.feed_url or f"{base}/podcast.rss"
 
     episodes_path = Path(args.episodes) if args.episodes else None
     filename_transform = None
