@@ -5,7 +5,7 @@
     <link>https://github.com/mnaumann79/UOL_Podcasts/releases/tag/cm3020/v1</link>
     <description>Through this module you will learn about the field of Artificial Intelligence. This is a long-standing area of interest in computer science research, and it builds on and complements several of the other modules in the programme. The module focuses on topics such as symbolic representations, modelling, task learning and game playing. This module is focused on Artificial Intelligence techniques. You will understand the historical development of Artificial Intelligence including search, vision and planning. You will become familiar with the foundations of agent-based approaches to software design, decision making and problem solving including under uncertainty. You will have an opportunity to apply Artificial Intelligence techniques to particular problems, such as game playing and decision making.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2026 15:30:31 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 16:01:58 GMT</lastBuildDate>
     <itunes:author>CM3020: Artificial Intelligence</itunes:author>
     <atom:link href="https://mnaumann79.github.io/UOL_Podcasts/cm3020/podcast.rss" rel="self" type="application/rss+xml"/>
     <item>
@@ -14,7 +14,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/01_How_AI_Masters_Games_From_Scratch.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/01_How_AI_Masters_Games_From_Scratch.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/01_How_AI_Masters_Games_From_Scratch.m4a" type="audio/x-m4a" length="31653072"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:31 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 16:01:58 +0000</pubDate>
       <itunes:duration>16:23</itunes:duration>
     </item>
     <item>
@@ -23,7 +23,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/02_How_DQN_agents_master_Atari_games.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/02_How_DQN_agents_master_Atari_games.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/02_How_DQN_agents_master_Atari_games.m4a" type="audio/x-m4a" length="91585011"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:31 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 16:01:58 +0000</pubDate>
       <itunes:duration>47:26</itunes:duration>
     </item>
     <item>
@@ -32,7 +32,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/03_How_AI_masters_video_games_with_Keras.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/03_How_AI_masters_video_games_with_Keras.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/03_How_AI_masters_video_games_with_Keras.m4a" type="audio/x-m4a" length="37227205"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:31 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 16:01:58 +0000</pubDate>
       <itunes:duration>19:17</itunes:duration>
     </item>
     <item>
@@ -41,7 +41,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a" type="audio/x-m4a" length="40120035"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:31 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 16:01:58 +0000</pubDate>
       <itunes:duration>20:47</itunes:duration>
     </item>
     <item>
@@ -50,7 +50,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/05_How_Superhuman_AI_Mastered_Every_Game.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/05_How_Superhuman_AI_Mastered_Every_Game.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/05_How_Superhuman_AI_Mastered_Every_Game.m4a" type="audio/x-m4a" length="39437757"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:31 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 16:01:58 +0000</pubDate>
       <itunes:duration>20:25</itunes:duration>
     </item>
   </channel>
