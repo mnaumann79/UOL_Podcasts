@@ -5,7 +5,7 @@
     <link>https://github.com/mnaumann79/UOL_Podcasts/releases/tag/cm3035/v1</link>
     <description>This module covers server-side web development and the related internet protocols and standards; HTTP, REST and web sockets. The course focuses on applied server-side programming in Python and makes extensive use of the Django web framework.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2026 15:30:36 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 15:46:27 GMT</lastBuildDate>
     <itunes:author>CM3035: Advanced Web Development</itunes:author>
     <itunes:image href="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/artwork.png"/>
     <atom:link href="https://mnaumann79.github.io/UOL_Podcasts/cm3035/podcast.rss" rel="self" type="application/rss+xml"/>
@@ -15,7 +15,8 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/1.Scaling.Django.from.TCP.to.ORM.mp3</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/1.Scaling.Django.from.TCP.to.ORM.mp3</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/1.Scaling.Django.from.TCP.to.ORM.mp3" type="audio/mpeg" length="43803580"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>22:41</itunes:duration>
     </item>
     <item>
       <title>2. Django ORM Performance</title>
@@ -23,7 +24,8 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/2.Django.ORM.Performance.mp3</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/2.Django.ORM.Performance.mp3</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/2.Django.ORM.Performance.mp3" type="audio/mpeg" length="39608198"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>20:31</itunes:duration>
     </item>
     <item>
       <title>3. Django Generic Views and CSS Specificity</title>
@@ -31,7 +33,8 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/3.Django.Generic.Views.and.CSS.Specificity.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/3.Django.Generic.Views.and.CSS.Specificity.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/3.Django.Generic.Views.and.CSS.Specificity.m4a" type="audio/x-m4a" length="39004358"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>20:12</itunes:duration>
     </item>
     <item>
       <title>4. Stateless API Architecture with Django REST</title>
@@ -39,7 +42,8 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/4.Stateless.API.Architecture.with.Django.REST.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/4.Stateless.API.Architecture.with.Django.REST.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/4.Stateless.API.Architecture.with.Django.REST.m4a" type="audio/x-m4a" length="38127734"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>19:45</itunes:duration>
     </item>
     <item>
       <title>5. Moving rendering logic into the browser</title>
@@ -47,47 +51,53 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/5.Moving.rendering.logic.into.the.browser.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/5.Moving.rendering.logic.into.the.browser.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/5.Moving.rendering.logic.into.the.browser.m4a" type="audio/x-m4a" length="40125264"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>20:47</itunes:duration>
     </item>
     <item>
-      <title>6_Asynchronous_Django_with_Celery_and_Channels</title>
+      <title>6. Asynchronous Django with Celery and Channels</title>
       <description></description>
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/6_Asynchronous_Django_with_Celery_and_Channels.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/6_Asynchronous_Django_with_Celery_and_Channels.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/6_Asynchronous_Django_with_Celery_and_Channels.m4a" type="audio/x-m4a" length="37446203"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>19:23</itunes:duration>
     </item>
     <item>
-      <title>7_From_SOAP_to_Automated_OpenAPI_Contracts</title>
+      <title>7. From SOAP to Automated OpenAPI Contracts</title>
       <description></description>
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/7_From_SOAP_to_Automated_OpenAPI_Contracts.m4a" type="audio/x-m4a" length="43205717"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>22:22</itunes:duration>
     </item>
     <item>
-      <title>8_How_to_stop_silent_Django_exploits</title>
+      <title>8. How to Stop Silent Django Exploits</title>
       <description></description>
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/8_How_to_stop_silent_Django_exploits.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/8_How_to_stop_silent_Django_exploits.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/8_How_to_stop_silent_Django_exploits.m4a" type="audio/x-m4a" length="37939481"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>19:39</itunes:duration>
     </item>
     <item>
-      <title>9_Django_Deployment_from_Localhost_to_Production</title>
+      <title>9. Django Deployment from Localhost to Production</title>
       <description></description>
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/9_Django_Deployment_from_Localhost_to_Production.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/9_Django_Deployment_from_Localhost_to_Production.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/9_Django_Deployment_from_Localhost_to_Production.m4a" type="audio/x-m4a" length="45555218"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>23:35</itunes:duration>
     </item>
     <item>
-      <title>10_Scaling_Django_beyond_a_single_server</title>
+      <title>10. Scaling Django Beyond A Single Server</title>
       <description></description>
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/10_Scaling_Django_beyond_a_single_server.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/10_Scaling_Django_beyond_a_single_server.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3035/v1/10_Scaling_Django_beyond_a_single_server.m4a" type="audio/x-m4a" length="39161237"/>
-      <pubDate>Thu, 11 Jun 2026 15:30:36 +0000</pubDate>
+      <pubDate>Thu, 11 Jun 2026 15:46:27 +0000</pubDate>
+      <itunes:duration>20:16</itunes:duration>
     </item>
   </channel>
 </rss>
