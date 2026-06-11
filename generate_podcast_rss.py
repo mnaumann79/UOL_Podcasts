@@ -90,6 +90,7 @@ def build_rss(
     feed_url: str,
     channel_link: str,
     episodes_path: Path | None = None,
+    filename_transform=None,
 ) -> str:
     """Build a podcast RSS feed from MP3 files in the given folder.
 
@@ -97,6 +98,8 @@ def build_rss(
         "https://nc.example.com/s/TOKEN/download?path=/cm3035&files={filename}"
         or "https://github.com/owner/repo/releases/download/v1/{filename}"
     episodes_path: optional path to episodes.json (defaults to folder_path)
+    filename_transform: optional function to transform filenames before URL-encoding,
+        e.g. for GitHub Releases which replaces spaces with dots.
     """
 
     audio_files = sorted(
@@ -121,7 +124,8 @@ def build_rss(
 
     items = []
     for audio in audio_files:
-        file_url = url_pattern.format(filename=quote(audio.name))
+        display_name = filename_transform(audio.name) if filename_transform else audio.name
+        file_url = url_pattern.format(filename=quote(display_name))
         file_size = audio.stat().st_size
         episode_meta = episodes.get(audio.name, {})
         item_title = episode_meta.get("title") or audio.stem
@@ -214,7 +218,11 @@ def main():
         feed_url = f"{base}/podcast.rss"
 
     episodes_path = Path(args.episodes) if args.episodes else None
-    rss = build_rss(folder, args.title, args.description, url_pattern, feed_url, channel_link, episodes_path)
+    filename_transform = None
+    if args.repo:
+        # GitHub Releases replaces spaces with dots in asset filenames
+        filename_transform = lambda n: re.sub(r"[ .]+", ".", n)
+    rss = build_rss(folder, args.title, args.description, url_pattern, feed_url, channel_link, episodes_path, filename_transform)
     Path(args.output).write_text(rss, encoding="utf-8")
 
     print(f"RSS feed written to: {args.output}")
