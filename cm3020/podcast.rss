@@ -5,7 +5,7 @@
     <link>https://github.com/mnaumann79/UOL_Podcasts/releases/tag/cm3020/v1</link>
     <description>Through this module you will learn about the field of Artificial Intelligence. This is a long-standing area of interest in computer science research, and it builds on and complements several of the other modules in the programme. The module focuses on topics such as symbolic representations, modelling, task learning and game playing. This module is focused on Artificial Intelligence techniques. You will understand the historical development of Artificial Intelligence including search, vision and planning. You will become familiar with the foundations of agent-based approaches to software design, decision making and problem solving including under uncertainty. You will have an opportunity to apply Artificial Intelligence techniques to particular problems, such as game playing and decision making.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 11 Jun 2026 19:26:14 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 20:34:17 GMT</lastBuildDate>
     <itunes:author>CM3020: Artificial Intelligence</itunes:author>
     <itunes:image href="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/artwork.jpg"/>
     <atom:link href="https://mnaumann79.github.io/UOL_Podcasts/cm3020/podcast.rss" rel="self" type="application/rss+xml"/>
@@ -15,7 +15,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/01_How_AI_Masters_Games_From_Scratch.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/01_How_AI_Masters_Games_From_Scratch.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/01_How_AI_Masters_Games_From_Scratch.m4a" type="audio/x-m4a" length="31653072"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>16:23</itunes:duration>
     </item>
     <item>
@@ -24,7 +24,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/02_How_DQN_agents_master_Atari_games.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/02_How_DQN_agents_master_Atari_games.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/02_How_DQN_agents_master_Atari_games.m4a" type="audio/x-m4a" length="91585011"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>47:26</itunes:duration>
     </item>
     <item>
@@ -33,7 +33,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/03_How_AI_masters_video_games_with_Keras.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/03_How_AI_masters_video_games_with_Keras.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/03_How_AI_masters_video_games_with_Keras.m4a" type="audio/x-m4a" length="37227205"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>19:17</itunes:duration>
     </item>
     <item>
@@ -42,7 +42,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/04_Implementing_the_Breakwall_DQN_Agent.m4a" type="audio/x-m4a" length="40120035"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>20:47</itunes:duration>
     </item>
     <item>
@@ -51,7 +51,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/05_How_Superhuman_AI_Mastered_Every_Game.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/05_How_Superhuman_AI_Mastered_Every_Game.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/05_How_Superhuman_AI_Mastered_Every_Game.m4a" type="audio/x-m4a" length="39437757"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>20:25</itunes:duration>
     </item>
     <item>
@@ -60,7 +60,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/06_Evolving_Virtual_Creatures_with_Genetic_Algorithms.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/06_Evolving_Virtual_Creatures_with_Genetic_Algorithms.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/06_Evolving_Virtual_Creatures_with_Genetic_Algorithms.m4a" type="audio/x-m4a" length="44152563"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>22:52</itunes:duration>
     </item>
     <item>
@@ -69,7 +69,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/07_How_Evolution_Glitches_Digital_Physics_Engines.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/07_How_Evolution_Glitches_Digital_Physics_Engines.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/07_How_Evolution_Glitches_Digital_Physics_Engines.m4a" type="audio/x-m4a" length="43540506"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>22:33</itunes:duration>
     </item>
     <item>
@@ -78,7 +78,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/08_How_AI_Cheats_Physics_to_Walk.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/08_How_AI_Cheats_Physics_to_Walk.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/08_How_AI_Cheats_Physics_to_Walk.m4a" type="audio/x-m4a" length="44477641"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>23:02</itunes:duration>
     </item>
     <item>
@@ -87,7 +87,7 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/09_Why_AI_Evolved_a_Rocket_Leg.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/09_Why_AI_Evolved_a_Rocket_Leg.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/09_Why_AI_Evolved_a_Rocket_Leg.m4a" type="audio/x-m4a" length="42902304"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>22:13</itunes:duration>
     </item>
     <item>
@@ -96,8 +96,89 @@
       <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/10_Evolving_Soft_Robots_and_AI_Brains.m4a</link>
       <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/10_Evolving_Soft_Robots_and_AI_Brains.m4a</guid>
       <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/10_Evolving_Soft_Robots_and_AI_Brains.m4a" type="audio/x-m4a" length="44152563"/>
-      <pubDate>Thu, 11 Jun 2026 19:26:14 +0000</pubDate>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
       <itunes:duration>22:52</itunes:duration>
+    </item>
+    <item>
+      <title>11. How Probability Powers an AI Pop Band</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/11_How_Probability_Powers_an_AI_Pop_Band.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/11_How_Probability_Powers_an_AI_Pop_Band.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/11_How_Probability_Powers_an_AI_Pop_Band.m4a" type="audio/x-m4a" length="34740248"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>17:59</itunes:duration>
+    </item>
+    <item>
+      <title>12. Teaching GPT-2 to Write Eurovision Songs</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/12_Teaching_GPT-2_to_Write_Eurovision_Songs.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/12_Teaching_GPT-2_to_Write_Eurovision_Songs.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/12_Teaching_GPT-2_to_Write_Eurovision_Songs.m4a" type="audio/x-m4a" length="33833743"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>17:31</itunes:duration>
+    </item>
+    <item>
+      <title>13. How Google Magenta Writes Pop Songs</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/13_How_Google_Magenta_Writes_Pop_Songs.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/13_How_Google_Magenta_Writes_Pop_Songs.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/13_How_Google_Magenta_Writes_Pop_Songs.m4a" type="audio/x-m4a" length="36559120"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>18:56</itunes:duration>
+    </item>
+    <item>
+      <title>14. How We Force Machines to Sing</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/14_How_We_Force_Machines_to_Sing.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/14_How_We_Force_Machines_to_Sing.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/14_How_We_Force_Machines_to_Sing.m4a" type="audio/x-m4a" length="39906382"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>20:40</itunes:duration>
+    </item>
+    <item>
+      <title>15. Building an AI Pop Star with Python</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/15_Building_an_AI_Pop_Star_with_Python.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/15_Building_an_AI_Pop_Star_with_Python.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/15_Building_an_AI_Pop_Star_with_Python.m4a" type="audio/x-m4a" length="38890809"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>20:08</itunes:duration>
+    </item>
+    <item>
+      <title>16. Robot Scientists Automating the Scientific Method</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/16_Robot_Scientists_Automating_the_Scientific_Method.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/16_Robot_Scientists_Automating_the_Scientific_Method.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/16_Robot_Scientists_Automating_the_Scientific_Method.m4a" type="audio/x-m4a" length="39946722"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>20:41</itunes:duration>
+    </item>
+    <item>
+      <title>17. How AI Agents Invent New Drug</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/17_How_AI_agents_invent_new_drug.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/17_How_AI_agents_invent_new_drug.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/17_How_AI_agents_invent_new_drug.m4a" type="audio/x-m4a" length="35627215"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>18:27</itunes:duration>
+    </item>
+    <item>
+      <title>18. How Robot Scientists Reason to Invent Science</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/18_How_robot_scientists_reason_to_invent_science.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/18_How_robot_scientists_reason_to_invent_science.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/18_How_robot_scientists_reason_to_invent_science.m4a" type="audio/x-m4a" length="42129634"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>21:49</itunes:duration>
+    </item>
+    <item>
+      <title>19. Robot Scientists Automate Physical Yeast Experiments</title>
+      <description></description>
+      <link>https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/19_Robot_scientists_automate_physical_yeast_experiments.m4a</link>
+      <guid isPermaLink="true">https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/19_Robot_scientists_automate_physical_yeast_experiments.m4a</guid>
+      <enclosure url="https://github.com/mnaumann79/UOL_Podcasts/releases/download/cm3020/v1/19_Robot_scientists_automate_physical_yeast_experiments.m4a" type="audio/x-m4a" length="40588660"/>
+      <pubDate>Tue, 16 Jun 2026 20:34:17 +0000</pubDate>
+      <itunes:duration>21:01</itunes:duration>
     </item>
   </channel>
 </rss>
